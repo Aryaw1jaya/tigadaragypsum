@@ -12,6 +12,13 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            @media only screen and (max-width: 800px) {
+            #kata{
+                visibility: hidden;
+            }
+        }
+        </style>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -31,59 +38,97 @@
                 </div>
             </nav>
             <!-- Header-->
-            <header class="bg-dark py-5">
-                <div class="container px-5 mb-5">
-                    <div class="row gx-5 align-items-center justify-content-center">
-                        <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-white mb-4">Tiga Dara Gypsum</h1>
-                                <p class="lead fw-normal text-light mb-2"> MELAYANI PEKERJAAN : </p>
-                                    <ul class="text-light mb-4">
+            <header class="bg-dark m-0 py-3">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="container w-75">
+                    <div class="carousel-inner w-100">
+                      <div class="carousel-item active px-5 ">
+                            <img class="w-100" src="assets/image_slider1.jpg" alt="Image1">
+                        <div class="container">
+                          <div id="kata" class="carousel-caption text-start">
+                            <h1 class="text-dark ">Tiga Dara Gypsum</h1>
+                            <p class="lead fw-normal text-dark mb-2"> MELAYANI PEKERJAAN : </p>
+                                    <ul class="text-dark mb-4">
                                         <li class="mb-2">KRAWANGAN & DEKOR</li>
                                         <li class="mb-2">PLAFON PVC</li>
                                         <li class="mb-2">GYPSUM</li>
                                         <li class="mb-2">STUDIO/KEDAP SUARA</li>
                                         <li>PROFIL BETON, RISPLANG, PILAR, GAPURA</li>
                                     </ul>
-                                    <p class="lead fw-normal text-light mb-4"> Buka Setiap Hari <br>
+                                    <p class="lead fw-normal text-dark mb-4"> Buka Setiap Hari <br>
                                         Pukul 08.00 - 17.00
                                     </p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                <p>
                                     <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Profile</a>
-                                    <a class="btn btn-outline-light btn-lg px-4" href="#testimoni">Testimoni</a>
-                                </div>
-                            </div>
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#testimoni">Testimoni</a>
+                                </p>
+                          </div>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center mb-4"><img class="img-fluid rounded-3 my-1" width="80%" src="assets/logo-tdg.png" alt="..." /></div>
+                      </div>
+                      <div class="carousel-item px-5">
+                        <img class="w-100" src="assets/image_slider1.jpg" alt="Image2">                
+                        <!--<div class="container">
+                          <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                          </div>
+                        </div>-->
+                      </div>
+                      <div class="carousel-item px-5">
+                        <img class="w-100" src="assets/image_slider1.jpg" alt="Image3">                
+                        <!--<div class="container">
+                          <div class="carousel-caption text-end">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                          </div>
+                        </div>-->
+                      </div>
                     </div>
                 </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </header>
+            
             <!-- Features section-->
             <section class="py-3 mt-4 mb-3" id="features">
                 <div class="container px-5 my-5">
                     <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">A better way to start building.</h2></div>
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h3 class="fw-bolder mb-0">Kami bantu mengerjakan kebutuhan konstruksi Anda.</h3></div>
                         <div class="col-lg-8">
                             <div class="row gx-5 row-cols-1 row-cols-md-2">
                                 <div class="col mb-5 h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Studio / Ruangan Kedap Suara</h2>
+                                    <p class="mb-0">Kami Bantu membuat Ruangan atau Studio Anda Kedap Suara.</p>
                                 </div>
                                 <div class="col mb-5 h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Proyek Konstruksi</h2>
+                                    <p class="mb-0">Kami Bantu menyelesaikan pembangunan rumah, masjid, dan gedung anda.</p>
                                 </div>
                                 <div class="col mb-5 mb-md-0 h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Gypsum</h2>
+                                    <p class="mb-0">Kami menerima pemasangan Gypsum, Krawangan dan Decor ruangan atau rumah anda.</p>
                                 </div>
                                 <div class="col h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Decoration</h2>
+                                    <p class="mb-0">Kami menerima pemasangan Profil beton, risplang, pilar dan gapura.</p>
                                 </div>
                             </div>
                         </div>
