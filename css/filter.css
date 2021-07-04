@@ -1,0 +1,30 @@
+.filterDiv {
+    float: left;
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .container {
+    overflow: hidden;
+  }
+  
+  /* Style the buttons */
+  .btnn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: aquamarine;
+    cursor: pointer;
+  }
+  
+  .btnn:hover {
+    background-color: cornflowerblue;
+  }
+  
+  .btnn.active {
+    background-color: cornflowerblue;
+    color: white;
+  }
