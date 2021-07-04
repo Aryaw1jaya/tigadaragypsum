@@ -18,6 +18,9 @@
     padding: 12px 16px;
     background-color: aquamarine;
     cursor: pointer;
+    margin: 1px;
+    margin-top: 3px;
+    border: 1px solid black;
   }
   
   .btnn:hover {
